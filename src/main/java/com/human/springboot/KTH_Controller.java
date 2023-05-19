@@ -30,6 +30,13 @@ public class KTH_Controller {
 	ArrayList<String> imgUrlMain= new ArrayList();
 	ArrayList<String> imgUrlSub= new ArrayList();
 		
+	
+	@GetMapping("/EmailTest")
+	public String Email() {
+		return "EmailTest";
+	}
+	
+	
 	@GetMapping("/login")
 	public String login(HttpServletRequest req,Model model) {
 	
